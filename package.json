@@ -1,11 +1,11 @@
 {
   "name": "auth-session-express",
   "version": "1.0.0",
-  "description": "- statefull & stateless  - what is session mangment  - task (express-session)",
+  "description": "- stateful & stateless  - what is session management  - task (express-session)",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "start": "NODE_ENV=production node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/GSG-CA/auth-session-express#readme",
   "dependencies": {
     "connect-pg-simple": "^7.0.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-session": "^1.17.2",
     "pg": "^8.7.3"
